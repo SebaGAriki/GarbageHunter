@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - BolsaVerde
+  - BolsaMarron
+  - BolsaAmarilla
+  - BolsaAzul
+  - BolsaBlanca
+  - BolsaGris
   layers:
   - Default
   - TransparentFX
