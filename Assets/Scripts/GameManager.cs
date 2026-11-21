@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; // Necesario para controlar las imágenes de las estrellas
+using UnityEngine.UI; // Necesario para controlar las imÃ¡genes de las estrellas
 using TMPro; // Necesario para controlar TextMeshPro
 
 public class GameManager : MonoBehaviour
@@ -14,21 +14,21 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textoTemporizador;
 
 
-    [Header("Configuración de Tiempo (Estrella 3)")]
+    [Header("ConfiguraciÃ³n de Tiempo (Estrella 3)")]
     public float tiempoLimiteSegundos = 30f; // Ajustable por nivel en el Inspector
     private float tiempoTranscurrido = 0f;
     private bool nivelTerminado = false;
 
     [Header("UI de Estrellas en Panel Victoria")]
-    public Image imagenEstrella1; // Misión 1: Superar el nivel
-    public Image imagenEstrella2; // Misión 2: Todos los cestos correctos
-    public Image imagenEstrella3; // Misión 3: Tiempo límite
+    public Image imagenEstrella1; // MisiÃ³n 1: Superar el nivel
+    public Image imagenEstrella2; // MisiÃ³n 2: Todos los cestos correctos
+    public Image imagenEstrella3; // MisiÃ³n 3: Tiempo lÃ­mite
 
-    [Tooltip("Opcional: Arrastra aquí tus sprites de estrella vacía y llena")]
+    [Tooltip("Opcional: Arrastra aquÃ­ tus sprites de estrella vacÃ­a y llena")]
     public Sprite spriteEstrellaVacia;
     public Sprite spriteEstrellaLlena;
 
-    [Header("Estadísticas (Solo lectura)")]
+    [Header("EstadÃ­sticas (Solo lectura)")]
     public int totalBolsasNivel = 0;
     public int bolsasDepositadas = 0;
     public int aciertosDeColor = 0;
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // Cuenta el tiempo mientras el nivel esté en curso
+        // Cuenta el tiempo mientras el nivel estÃ© en curso
         if (!nivelTerminado)
         {
             tiempoTranscurrido += Time.deltaTime;
@@ -139,10 +139,10 @@ public class GameManager : MonoBehaviour
 
         // Evaluamos las 3 condiciones de forma independiente
         bool ganoEstrella1 = true; // Siempre se gana al superar el nivel
-        bool ganoEstrella2 = (aciertosDeColor == totalBolsasNivel); // Ningún error ni bolsa perdida
+        bool ganoEstrella2 = (aciertosDeColor == totalBolsasNivel); // NingÃºn error ni bolsa perdida
         bool ganoEstrella3 = (tiempoTranscurrido <= tiempoLimiteSegundos);
 
-        // Rellenamos o dejamos vacía cada estrella según su misión
+        // Rellenamos o dejamos vacÃ­a cada estrella segÃºn su misiÃ³n
         ActualizarVisualEstrella(imagenEstrella1, ganoEstrella1);
         ActualizarVisualEstrella(imagenEstrella2, ganoEstrella2);
         ActualizarVisualEstrella(imagenEstrella3, ganoEstrella3);
@@ -154,7 +154,7 @@ public class GameManager : MonoBehaviour
     {
         if (imgEstrella == null) return;
 
-        // Si asignaste ambos sprites en el Inspector, intercambia las imágenes
+        // Si asignaste ambos sprites en el Inspector, intercambia las imÃ¡genes
         if (spriteEstrellaLlena != null && spriteEstrellaVacia != null)
         {
             imgEstrella.sprite = conseguida ? spriteEstrellaLlena : spriteEstrellaVacia;
@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Respaldo automático para prototipo si aún no tienes los 2 sprites dibujados
+            // Respaldo automÃ¡tico para prototipo si aÃºn no tienes los 2 sprites dibujados
             imgEstrella.color = conseguida ? Color.yellow : new Color(0.25f, 0.25f, 0.25f, 0.85f);
         }
     }
@@ -172,6 +172,8 @@ public class GameManager : MonoBehaviour
         if (nivelTerminado) return;
         nivelTerminado = true;
         panelDerrota.SetActive(true);
+        MusicManager.instance.PonerMusicaDerrota();
+
     }
 
     public void ReiniciarNivel()

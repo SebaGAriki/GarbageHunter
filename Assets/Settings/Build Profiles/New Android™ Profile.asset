@@ -82,10 +82,10 @@ MonoBehaviour:
     - line: '|   iosShowActivityIndicatorOnLoading: -1'
     - line: '|   androidShowActivityIndicatorOnLoading: -1'
     - line: '|   iosUseCustomAppBackgroundBehavior: 0'
-    - line: '|   allowedAutorotateToPortrait: 0'
-    - line: '|   allowedAutorotateToPortraitUpsideDown: 0'
+    - line: '|   allowedAutorotateToPortrait: 1'
+    - line: '|   allowedAutorotateToPortraitUpsideDown: 1'
     - line: '|   allowedAutorotateToLandscapeRight: 1'
-    - line: '|   allowedAutorotateToLandscapeLeft: 0'
+    - line: '|   allowedAutorotateToLandscapeLeft: 1'
     - line: '|   useOSAutorotation: 1'
     - line: '|   use32BitDisplayBuffer: 1'
     - line: '|   preserveFramebufferAlpha: 0'
@@ -994,7 +994,7 @@ MonoBehaviour:
         m_ExportAsGoogleAndroidProject: 0
         m_DebugSymbolLevel: 1
         m_DebugSymbolFormat: 5
-        m_CurrentDeploymentTargetId: __builtin__target_all
+        m_CurrentDeploymentTargetId: RFCY90D6QWE
         m_BuildType: 2
         m_BuildAppBundle: 0
         m_IPAddressToConnect: 
