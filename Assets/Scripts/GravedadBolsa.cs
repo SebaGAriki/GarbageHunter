@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class GravedadBolsa : MonoBehaviour
 {
-    // Esta variable guarda automáticamente cuál es la bolsa activa en el nivel
     public static GravedadBolsa bolsaActiva;
 
+    [HideInInspector] public bool atrapada = false; // Evita que un pozo la detecte dos veces
     public float multiplicadorGravedad = 40f;
     private Rigidbody rb;
 
     void OnEnable()
     {
-        bolsaActiva = this; // Al aparecer, se registra como la bolsa que controlas
+        bolsaActiva = this;
     }
 
     void OnDisable()
