@@ -49,6 +49,12 @@ public class MusicManager : MonoBehaviour
             case "Nivel1":
                 CambiarMusica(musicaNivel, true);
                 break;
+            case "Nivel2":
+                CambiarMusica(musicaNivel, true);
+                break;
+            case "Nivel3":
+                CambiarMusica(musicaNivel, true);
+                break;
         }
     }
 

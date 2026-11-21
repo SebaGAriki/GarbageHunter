@@ -148,6 +148,7 @@ public class GameManager : MonoBehaviour
         ActualizarVisualEstrella(imagenEstrella3, ganoEstrella3);
 
         panelVictoria.SetActive(true);
+        MusicManager.instance.PonerMusicaVictoria();
     }
 
     private void ActualizarVisualEstrella(Image imgEstrella, bool conseguida)
