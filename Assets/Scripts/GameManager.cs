@@ -17,12 +17,15 @@ public class GameManager : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag(tagBolsa).Length <= 1)
         {
             panelVictoria.SetActive(true);
+            MusicManager.instance.PonerMusicaVictoria();
         }
     }
 
     public void MostrarDerrota()
     {
         panelDerrota.SetActive(true);
+        MusicManager.instance.PonerMusicaDerrota();
+
     }
 
     public void ReiniciarNivel()
