@@ -3,6 +3,12 @@ using UnityEngine;
 public class CumuloInteractivo : MonoBehaviour
 {
     public GameObject prefabBolsa;
+    [Header("Ajuste de Alturas")]
+    [Tooltip("Altura fija en el mundo (eje Y) donde aparecerán los cúmulos")]
+    public float alturaMundoCumulo = 0.8f;
+
+    [Tooltip("Elevación extra al convertir este cúmulo en bolsa para que no nazca enterrada en el piso")]
+    public float elevacionBolsa = 1f;
 
     void OnMouseDown()
     {
@@ -15,7 +21,10 @@ public class CumuloInteractivo : MonoBehaviour
 
             if (info != null && info.prefabCumulo != null)
             {
-                Instantiate(info.prefabCumulo, bolsaAnterior.transform.position, Quaternion.identity, transform.parent);
+                // Mantiene X y Z donde quedó la bolsa, pero fija Y en 0.8 del mundo
+                Vector3 posCumulo = bolsaAnterior.transform.position;
+                posCumulo.y = alturaMundoCumulo;
+                Instantiate(info.prefabCumulo, posCumulo, Quaternion.identity, transform.parent);
             }
 
             Destroy(bolsaAnterior.gameObject);
@@ -30,7 +39,12 @@ public class CumuloInteractivo : MonoBehaviour
     {
         if (prefabBolsa != null)
         {
-            Instantiate(prefabBolsa, transform.position, Quaternion.identity, transform.parent);
+            // Como el cúmulo está a 0.8 (al ras del piso) y el pivote de la bolsa está en su centro (~1.77),
+            // sumamos elevacionBolsa para que la esfera aparezca apoyada sobre el suelo y no atravesándolo
+            Vector3 posBolsa = transform.position;
+            posBolsa.y += elevacionBolsa;
+
+            Instantiate(prefabBolsa, posBolsa, Quaternion.identity, transform.parent);
         }
 
         Destroy(gameObject);

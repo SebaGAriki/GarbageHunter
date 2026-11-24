@@ -108,7 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ae8736b9df59946b18806bf7096843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabCumulo: {fileID: 3079523780666810624, guid: c397c20d30e4f284a9e06b62d4824bcd, type: 3}
+  prefabCumulo: {fileID: 7006214634193277681, guid: c397c20d30e4f284a9e06b62d4824bcd, type: 3}
+  ajusteAlturaCumulo: -40
 --- !u!135 &869592940206231268
 SphereCollider:
   m_ObjectHideFlags: 0
