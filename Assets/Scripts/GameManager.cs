@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instancia;
     public static bool juegoPausado = false;
+    public static bool enDialogo = false;
 
     [Header("Paneles UI")]
     public GameObject panelVictoria;
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
         Instancia = this;
         // Asegura que el tiempo corra normal cada vez que carga una escena
         juegoPausado = false;
+        enDialogo = false;
         Time.timeScale = 1f;
     }
 
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
     }
     public void PausarJuego()
     {
-        if (nivelTerminado || juegoPausado) return;
+        if (nivelTerminado || juegoPausado || enDialogo) return;
 
         juegoPausado = true;
         Time.timeScale = 0f; // Paraliza las físicas de la bolsa, Opip y el temporizador
