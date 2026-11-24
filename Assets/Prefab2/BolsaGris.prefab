@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0181f6521dbb60747af014c8f6483200, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0181f6521dbb60747af014c8f6483200, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0181f6521dbb60747af014c8f6483200, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0181f6521dbb60747af014c8f6483200, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27624607
       objectReference: {fileID: 0}
@@ -47,6 +59,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0181f6521dbb60747af014c8f6483200, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0181f6521dbb60747af014c8f6483200, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 0181f6521dbb60747af014c8f6483200, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -109,7 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCumulo: {fileID: 7006214634193277681, guid: c397c20d30e4f284a9e06b62d4824bcd, type: 3}
-  ajusteAlturaCumulo: -40
 --- !u!135 &869592940206231268
 SphereCollider:
   m_ObjectHideFlags: 0

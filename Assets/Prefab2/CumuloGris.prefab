@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.035283, y: 1, z: -4.9345417}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,7 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabBolsa: {fileID: 5129179170669858932, guid: 25dfa153bf87dab4280ce953a347d0ab, type: 3}
-  ajusteAlturaBolsa: 0
+  alturaMundoCumulo: 0.8
+  elevacionBolsa: 1
 --- !u!33 &3306768730598352380
 MeshFilter:
   m_ObjectHideFlags: 0
