@@ -22,7 +22,7 @@ public class CestaTrigger : MonoBehaviour
                 GameManager.Instancia.BolsaDepositada(bolsa, esColorCorrecto);
             }
 
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
     }
 }
