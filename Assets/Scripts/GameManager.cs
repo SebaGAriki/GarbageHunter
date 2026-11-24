@@ -6,8 +6,12 @@ using TMPro; // Necesario para controlar TextMeshPro
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instancia;
+    public static bool juegoPausado = false;
+
+    [Header("Paneles UI")]
     public GameObject panelVictoria;
     public GameObject panelDerrota;
+    public GameObject panelPausa;
 
     [Header("HUD en Pantalla")]
     public TextMeshProUGUI textoContadorBolsas;
@@ -36,6 +40,9 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Instancia = this;
+        // Asegura que el tiempo corra normal cada vez que carga una escena
+        juegoPausado = false;
+        Time.timeScale = 1f;
     }
 
     void Start()
@@ -56,6 +63,29 @@ public class GameManager : MonoBehaviour
             ActualizarHUD();
         }
     }
+    public void PausarJuego()
+    {
+        if (nivelTerminado || juegoPausado) return;
+
+        juegoPausado = true;
+        Time.timeScale = 0f; // Paraliza las físicas de la bolsa, Opip y el temporizador
+
+        if (panelPausa != null)
+        {
+            panelPausa.SetActive(true);
+        }
+    }
+    public void ReanudarJuego()
+    {
+        juegoPausado = false;
+        Time.timeScale = 1f; // Devuelve el control y las físicas exactamente donde quedaron
+
+        if (panelPausa != null)
+        {
+            panelPausa.SetActive(false);
+        }
+    }
+
     private void ActualizarHUD()
     {
         // 1. Contador de bolsas correctas / total

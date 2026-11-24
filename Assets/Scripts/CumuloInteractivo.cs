@@ -12,6 +12,8 @@ public class CumuloInteractivo : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (GameManager.juegoPausado) return;
+
         GravedadBolsa bolsaAnterior = GravedadBolsa.bolsaActiva;
 
         // Si hay una bolsa activa y NO está atrapada, la convertimos en cúmulo
