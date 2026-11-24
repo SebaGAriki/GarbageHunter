@@ -44,15 +44,15 @@ public class MusicManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Mantén aquí los nombres exactos de tus escenas tal como los tienes ahora
-        switch (scene.name)
+        // Si el nombre de la escena contiene "Menu" o "Selector" (sin importar mayúsculas), pone música del menú
+        if (scene.name.ToLower().Contains("menu") || scene.name.ToLower().Contains("selector"))
         {
-            case "Menu":
-                CambiarMusica(musicaMenu, true);
-                break;
-            case "Nivel1":
-                CambiarMusica(musicaNivel, true);
-                break;
+            CambiarMusica(musicaMenu, true);
+        }
+        else
+        {
+            // Para CUALQUIER nivel (Nivel1, Nivel2, Nivel 3, etc.), fuerza siempre la música del nivel
+            CambiarMusica(musicaNivel, true);
         }
     }
 
