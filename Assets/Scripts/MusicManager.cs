@@ -6,13 +6,17 @@ public class MusicManager : MonoBehaviour
     public static MusicManager instance;
 
     [Header("Componentes")]
-    public AudioSource audioSource;
+    public AudioSource audioSource;      // El que ya tienes para la música
+    public AudioSource sfxSource;        // Nuevo AudioSource solo para efectos (SFX)
 
     [Header("Pistas de Música")]
     public AudioClip musicaMenu;
     public AudioClip musicaNivel;
     public AudioClip musicaVictoria;
     public AudioClip musicaDerrota;
+
+    [Header("Efectos de Sonido (UI)")]
+    public AudioClip clipBoton;
 
     void Awake()
     {
@@ -40,19 +44,13 @@ public class MusicManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Reemplaza "Menu" y "Nivel1" con los nombres exactos de tus escenas
+        // Mantén aquí los nombres exactos de tus escenas tal como los tienes ahora
         switch (scene.name)
         {
             case "Menu":
                 CambiarMusica(musicaMenu, true);
                 break;
             case "Nivel1":
-                CambiarMusica(musicaNivel, true);
-                break;
-            case "Nivel2":
-                CambiarMusica(musicaNivel, true);
-                break;
-            case "Nivel3":
                 CambiarMusica(musicaNivel, true);
                 break;
         }
@@ -69,7 +67,6 @@ public class MusicManager : MonoBehaviour
         audioSource.Play();
     }
 
-    // Métodos directos para tus Canvas
     public void PonerMusicaVictoria()
     {
         CambiarMusica(musicaVictoria, false);
@@ -78,5 +75,14 @@ public class MusicManager : MonoBehaviour
     public void PonerMusicaDerrota()
     {
         CambiarMusica(musicaDerrota, false);
+    }
+
+    // Método para llamar desde cualquier botón del juego
+    public void SonidoBoton()
+    {
+        if (sfxSource != null && clipBoton != null)
+        {
+            sfxSource.PlayOneShot(clipBoton);
+        }
     }
 }
