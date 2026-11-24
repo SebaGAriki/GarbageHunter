@@ -15,5 +15,21 @@ MonoBehaviour:
   lineas:
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Nivel 3
+    textoEspanol: que onda pa todo viento?
+    textoIngles: 
+  - nombrePersonaje: Opip
+    retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
+    textoEspanol: Bueno te comento en este nivel tendras un nuevo obstaculo
+    textoIngles: 
+  - nombrePersonaje: Opip
+    retratoPersonaje: {fileID: 21300000, guid: df776fd58d3d4404ca895f051e4e2687, type: 3}
+    textoEspanol: Seran unas puertas que se abren y se cierran con un boton
+    textoIngles: 
+  - nombrePersonaje: Opip
+    retratoPersonaje: {fileID: 21300000, guid: df776fd58d3d4404ca895f051e4e2687, type: 3}
+    textoEspanol: Puedes dejar precionados los botones con los cumulos
+    textoIngles: 
+  - nombrePersonaje: Opip
+    retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
+    textoEspanol: Sin mas que dicir me voy papu, good luck
     textoIngles: 

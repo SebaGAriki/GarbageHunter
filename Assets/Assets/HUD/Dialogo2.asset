@@ -15,5 +15,13 @@ MonoBehaviour:
   lineas:
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
+    textoEspanol: Que onda viajero vengo con nuevo truco
+    textoIngles: 
+  - nombrePersonaje: Opip
+    retratoPersonaje: {fileID: 21300000, guid: df776fd58d3d4404ca895f051e4e2687, type: 3}
     textoEspanol: Aqui puedes cambiar de control de bolsa al tocar un cumulo
+    textoIngles: 
+  - nombrePersonaje: Opip
+    retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
+    textoEspanol: pruebalo aqui, chau suerte campeon
     textoIngles: 
