@@ -15,23 +15,23 @@ MonoBehaviour:
   lineas:
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: 'Viajero '
+    textoEspanol: Viajero.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Esta es la prueba final
+    textoEspanol: Esta es la prueba final.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Hora de superar tus limites
+    textoEspanol: Hora de superar tus limites.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Aqui encontraras todo lo que enfrentaste anteriormente
+    textoEspanol: Aqui encontraras todo lo que enfrentaste anteriormente.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Te deseo mucha suerte
+    textoEspanol: Te deseo mucha suerte.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}

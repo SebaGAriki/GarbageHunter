@@ -15,14 +15,14 @@ MonoBehaviour:
   lineas:
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Hola, binevenido viajero
+    textoEspanol: Hola, bienvenido viajero.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Tu me ayudaras a poner la basura en su lugar, literalmente
+    textoEspanol: Tu me ayudaras a poner la basura en su lugar, literalmente.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: a796e80c59e633d4fba68589ff8f5ce2, type: 3}
     textoEspanol: Utiliza el giroscopio de tu celular para contolar la direcion de
-      la bolsa de basura
+      la bolsa de basura.
     textoIngles: 

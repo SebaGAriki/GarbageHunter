@@ -15,15 +15,15 @@ MonoBehaviour:
   lineas:
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Que pasa fiera
+    textoEspanol: Que pasa fiera.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: 'Malas noticias tendras otro obstaculo '
+    textoEspanol: Malas noticias tendras otro obstaculo.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
-    textoEspanol: Se tratan de paredes movedisas que se mueven
+    textoEspanol: Se tratan de paredes movedisas que se mueven.
     textoIngles: 
   - nombrePersonaje: Opip
     retratoPersonaje: {fileID: 21300000, guid: 2a8afdc925371bb4498af93176c9a07a, type: 3}
